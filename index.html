@@ -1,31 +1,102 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <title>Titre de la page</title>
-  <link rel="stylesheet" href="./asset/CSS/style.css">
+    <meta charset="utf-8">
+    <title>Titre de la page</title>
+    <link rel="stylesheet" href="./asset/CSS/style.css">
 </head>
 <body>
-  <header>
+    <header >
+        <p id="promo">😎 Profitez de votre jardin grâce à tous nos packs promos</p>
+        <nav class="espace">
+            <div class="boxTop">
+                <div class="container">
+                    <object data="./asset/IMG/Logo_desktop.svg"> </object>  
+                
 
-  </header>
-  <section class="container newsletter">
-    <h1 class="title">Newsletter</h1>
-    <p>Inscrivez-vous pour des offres exclusives, des conseils, des événements et plus encore.</p>
+                    <input type="text" class="search" placeholder="Rechercher un produit">   
+                </div>
+        
 
-    <label for="email">Email</label>
+                <div class="container">
+                    <a href="#" class="specialBox">
+                        <object data="./asset/IMG/Comment.svg" class="mediumHeight"> </object>  
+                        <div class="boxText">
+                            <p>Contactez un de</p>
+                            <p><strong>Nos conseillers</strong></p>
+                        </div> 
+                    </a>
+    
+                    <a href="#" class="specialBox">
+                        <object data="./asset/IMG/location.svg" class="mediumHeight"> </object>  
+                        <div class="boxText">
+                            <p>Retrouvez-nous</p>
+                            <p><strong>Magasin à Lille</strong></p>
+                        </div> 
+                    </a>
+    
+                    <a href="#"><object data="./asset/IMG/client.svg" class="mediumHeight"> </object>  </a>
+    
+    
+                    <a href="#" class="test"><object data="./asset/IMG/shop.svg" class="mediumHeight"></object></a>   
+                </div>
+                  
+            </div>
+            <div class="boxBottom">
+                <ul>
+                    <li><a class="upperCase" href="#">barbecues</a></li>
+                    <li><a class="upperCase" href="#">accesoires barbecues</a></li>
+                    <li><a class="upperCase" href="#">planchas</a></li>
+                    <li><a class="upperCase" href="#">braseros</a></li>
+                    <li><a class="upperCase" href="#">fumoirs</a></li>
+                    <li><a class="upperCase" href="#">cuisine exterieur</a></li>
+                    <li><a class="upperCase" href="#">Ambiance outdoor </a></li>
+                    <li><a class="upperCase" href="#">Pièces détachées</a></li>
+                    <li><a class="upperCase" href="#">‍🔥 Promotions</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id=homePage>
+        <img src="./asset/IMG/homepageimg.png">
+        <h3 class="upperCase">grands classiques</h3>
+        <h1 class="upperCase">Tout feu,<br> 
+            tout flamme</h1>
+        <button class="button">Voir les barbecues au charbon</button>
+    </section>
 
-    <input type="email" id="email"
-           pattern=".+@globex\.com" size="30" required>
+    <div class="espace">
+       <section id="info">
+            <div class="textAndTitle">
+                <p class="upperCase extraBold">Chez esprit Barbecue</p>
+                <h2 class="upperCase extraBold">Trouvez votre Barbecue, Plancha, Brasero, Fumoir</h2>
+            </div>
 
-    <div>
-      <input type="checkbox" id="scales" name="scales" checked>
-      <label for="scales">J'accepte de recevoir 1 à 2 fois par mois des emails de la part d'Esprit Barbecue</label>
+            <div class="container">
+
+                <div class="cardShow relative" >
+                    <h2 class="upperCase extraBold">Maîtriser la cuisson</h2>
+                    <img src="./asset/IMG/maitrise_cuisson.png">
+                    <button class="button button_white">Voir les accessoires de cuisson</button>
+                </div>
+
+                <div class="cardShow relative" >
+                    <h2 class="upperCase extraBold">Prolonger la saison</h2>
+                    <img src="./asset/IMG/prolongerSaison.png">
+                    <button class="button button_white">Voir les braseros ronds</button>
+                </div>
+
+                <div class="cardShow relative" >
+                    <h2 class="upperCase extraBold">La meilleure pizza</h2>
+                    <img src="./asset/IMG/pizza.png">
+                    <button class="button button_white">Voir les fours à pizza</button>
+                </div>
+            </div>
+       </section> 
     </div>
 
+    <footer>
 
-    <input type="submit" value="Je m'inscris">
-
-  </section>
+    </footer>
 </body>
 </html>

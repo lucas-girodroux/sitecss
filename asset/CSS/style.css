@@ -1,0 +1,262 @@
+:root{
+    --background : #F4F1EC;
+    --primary_600 : #D1111C;
+    --secondary_900 : #0F2018;
+    --secondary_800 : #17301C;
+    --secondary_100 : #CFD9CE;
+
+    --grdiLine_0 : 8%;
+    --grdiLine_1 : 4%;
+
+    --cardMargin:24px;
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url("../FONT/Montserrat-VariableFont_wght.ttf");
+}
+
+*{
+    padding : 0;
+    margin : 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "montserrat";
+}
+
+html{
+    background-color: var(--background);
+}
+
+.upperCase{
+    text-transform: uppercase;
+}
+
+header{
+    width: 100%;
+    color: white;
+    background-color: var(--secondary_900);
+
+}
+
+a{
+    color: inherit;
+}
+
+.mediumHeight{
+    height: 70%;
+}
+
+.espace{
+    padding: 0 var(--grdiLine_0) 0 var(--grdiLine_0);
+
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    gap: 36px;
+
+}
+
+.extraBold{
+    font-weight: bolder;
+}
+
+.button{
+    background-color: var(--primary_600);
+    border-radius: 14px;
+    padding: 16px;
+    border: none;
+    font-weight: bold;
+    color: white;
+}
+
+.button_white{
+    background-color: var(--background);
+    color: black;
+}
+
+.relative{
+    position: relative;
+}
+
+/* ---------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------
+                                                                                            HEADER
+---------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------*/
+
+header p{
+    font-size: 14px;
+}
+
+header #promo{
+    background-color: var(--secondary_800);
+    text-align: center;
+    padding: 10px 0 10px 0 ;
+}
+
+header nav{
+    height: fit-content;
+}
+
+header nav .boxTop{
+    padding: 16px 0 16px 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+
+
+
+
+header nav .boxTop .search{
+    background-color: var(--secondary_800);
+    border-radius: 32px;
+    width: 360px;
+    padding: 14px 16px 14px 40px;
+    border: none;
+
+
+    background-color: var(--secondary_800);
+    background-image: url('../IMG/search_solid.svg');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    color: white;
+
+}
+
+header nav .boxTop a:hover p{
+    color: var(--primary_600);
+}
+
+
+
+header nav .boxTop .specialBox{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    gap: 12px;
+
+}
+
+header nav .boxTop .specialBox .boxText{
+    width: max-content;
+    white-space: nowrap;
+}
+
+header nav .boxTop .specialBox object{
+    height: 70%;
+}
+
+header nav .boxBottom{
+    padding-bottom: 16px;
+    
+}
+
+header nav .boxBottom ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 13px;
+    font-weight: bold;
+} 
+
+header nav .boxBottom ul a:hover{
+    color: var(--primary_600);
+}
+
+/* ---------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------
+                                                                                            MAIN PAGE
+---------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------*/
+
+
+
+.button:hover{
+    cursor: pointer;
+}
+
+.button:active{
+    transform: translateY(1px);
+}
+
+#homePage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+
+    position: relative;
+    margin: 16px var(--grdiLine_1) 16px var(--grdiLine_1);
+
+    height: 580px;
+
+    color: white;
+
+
+}
+
+#homePage img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+#homePage h3{
+    font-size: 13px;
+}
+
+#homePage h1{
+    font-size: 80px;
+}
+
+/* ---------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------
+                                                                                            info
+---------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------*/
+
+#info{
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+
+    padding: 32px 0 32px 0;
+}
+
+#info .textAndTitle{
+    text-align: center;
+}
+
+#info .container .cardShow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+
+    width: 375px;
+    height: 300px;
+
+    color: white;
+}
+
+#info .container .cardShow h2{
+    margin-top: var(--cardMargin);
+}
+
+#info .container .cardShow button{
+    margin-bottom: var(--cardMargin);
+}
+
+#info .container .cardShow img{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+
+
+}
+
+
