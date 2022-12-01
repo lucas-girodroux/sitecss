@@ -1,0 +1,182 @@
+.title{
+    text-transform: uppercase;
+}
+
+.flex{
+    display:flex;
+}
+
+/*CHEZ ESPRIT BARBECUE, TROUVEZ...*/
+
+.bloc-chez-esprit-bbq{
+}
+
+.section-cat{
+    margin-bottom: 4rem;
+}
+
+.section-cat h1, h6{
+    text-align: center;
+}
+
+.section-cat__flex{
+    justify-content: space-between;
+}
+
+.bloc-cat{
+    background-repeat:no-repeat ;
+    width: 32%;
+    padding: 32px 0;
+    position: relative;
+    max-width: 378px;
+    border-radius: 1rem;
+}
+
+.bloc-cat h1{
+    color:white;
+    width: 100%;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 164px;
+    padding: 0;
+}
+
+.bloc-cat button {
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    background-color:white;
+    border-radius: 10px;
+    border: none;
+    padding: 8px 16px;
+    margin: auto;
+}
+
+.cuisson{
+    background-image: url("/asset/img/image_bloc_cuisson.png");
+}
+
+.saison{
+    background-image: url("/asset/img/image_bloc_saison.png");
+}
+
+.pizza{
+    background-image: url("/asset/img/image_bloc_pizza.png");
+}
+
+/*NOS MARQUES*/
+.brand-seo{
+    justify-content: space-between;
+}
+.bloc-marq{
+    background-color: pink;
+    min-width: 174px;
+    min-height: 174px;
+    display: flex;
+    justify-content: center;
+    border-radius:50%
+}
+
+.bloc-marq a{
+    margin: auto;
+    display: block;
+}
+
+/*NEWSLETTER*/
+
+.bloc-newsletter {
+    background-color: #201E1E;
+    display:flex;
+    border-radius: 16px;
+    margin-bottom: 80px;
+}
+
+.newsletter-image{
+    width:613px;
+    height:477px;
+}
+
+.email {
+    display: block;
+}
+
+.input-email{
+    background-color:transparent;
+    border: solid 1px white;
+    border-radius: 6px;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    width: 375px;
+}
+
+.input-email::placeholder {
+    color:white;
+}
+
+.newsletter-text{
+    color: #ffffff;
+    padding:80px 100px ;
+}
+
+.condition-newsletter{
+    background-color:transparent;
+    border: solid 1px white;
+    border-radius: 6px;
+}
+
+.cocher-condition{
+    padding-bottom: 24px;
+    display:flex;
+}
+
+@media screen and (max-width: 768px){
+    .bloc-entreprise-lilloise{
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+
+}
+
+/*Entreprise Lilloise Depuis 2010*/
+
+.bloc-entreprise-lilloise{
+    background-color:#F4F1EC;
+    position: relative;
+}
+
+
+.entreprise-lilloise-image, .entreprise-lilloise-text{
+    width: 50%;
+}
+
+.entreprise-lilloise-text{
+    padding-top: 24px;
+    padding-left:2rem;
+}
+
+.image_bloc_entr_lilloise {
+    border-radius: 16px;
+    width: 100%;
+
+}
+
+.bouton-rouge {
+    display: block;
+    color:white;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    background-color:#D1111C;
+    width:233px;
+    height:48px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.mb-48{
+    margin-bottom: 48px;
+}
