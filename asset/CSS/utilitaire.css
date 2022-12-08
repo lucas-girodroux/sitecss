@@ -1,6 +1,12 @@
 .title{
     text-transform: uppercase;
 }
+.flex{
+    display:flex;
+}
+.u-center{
+  text-align: center;
+}
 
 .container,
 .container-fluid,

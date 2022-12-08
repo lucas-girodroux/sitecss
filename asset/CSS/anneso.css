@@ -1,0 +1,150 @@
+/*NOS MARQUES*/
+.section-marques{
+    margin-bottom: 5rem;
+}
+.section-marques__subtitle, .section-marques__title{
+    font-weight: 800;
+}
+.section-marques__subtitle{
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+.section-marques__title{
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.brand-seo{
+    justify-content: space-between;
+}
+.bloc-marq{
+    background-color: #fff;
+    min-width: 174px;
+    min-height: 174px;
+    display: flex;
+    justify-content: center;
+    border-radius:50%
+}
+
+.bloc-marq a{
+    margin: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .section-marques{
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 1rem;
+    }
+    .brand-seo{
+        overflow-x: scroll;
+    }
+  }
+
+/*NEWSLETTER*/
+
+.bloc-newsletter {
+    background-color: #201E1E;
+    display:flex;
+    border-radius: 16px;
+    margin-bottom: 80px;
+    padding: 0;
+}
+
+.newsletter-image{
+    width:613px;
+    height:477px;
+}
+
+.email {
+    display: block;
+}
+
+.input-email{
+    background-color:transparent;
+    border: solid 1px white;
+    border-radius: 6px;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    width: 375px;
+}
+
+.input-email::placeholder {
+    color:white;
+}
+
+.newsletter-text{
+    color: #ffffff;
+    padding:80px 100px ;
+}
+
+.condition-newsletter{
+    background-color:transparent;
+    border: solid 1px white;
+    border-radius: 6px;
+}
+
+.cocher-condition{
+    padding-bottom: 24px;
+    display:flex;
+}
+
+
+/*Entreprise Lilloise Depuis 2010*/
+
+.bloc-entreprise-lilloise{
+    background-color:#F4F1EC;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.entreprise-lilloise__title{
+    margin-bottom: 1.5rem;
+}
+
+.entreprise-lilloise-image, .entreprise-lilloise-text{
+    width: 50%;
+}
+
+.entreprise-lilloise-text{
+    padding-top: 24px;
+    padding-left:2rem;
+}
+
+.image_bloc_entr_lilloise {
+    border-radius: 16px;
+    width: 100%;
+
+}
+
+.entreprise-lilloise__btn-red {
+    display: block;
+    margin-top: 48px;
+    
+}
+.entreprise-lilloise__btn-red:hover{
+    background-color: #680b10;
+}
+@media screen and (max-width: 768px){
+    .bloc-entreprise-lilloise{
+        flex-direction: column;
+        padding: 0 1rem;
+        width: auto;
+        margin-bottom: 2.5rem;
+    }
+    .bloc-marq{
+        margin-right: 1rem;
+    }
+    .entreprise-lilloise-image, .entreprise-lilloise-text{
+        width: 100%;
+    }
+    .entreprise-lilloise-text {
+        padding-top: 32px;
+        padding-left: 0;
+      }
+    .entreprise-lilloise__btn-red{
+        margin-top: 32px;
+    }
+}

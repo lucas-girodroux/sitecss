@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem;
-
+    margin-bottom: 5rem;
 }
 
 .favory__subtitle, .favory__title{
@@ -49,6 +49,7 @@
         width: auto !important;
         margin-left: 1rem !important;
         margin-right: 1rem !important;
+        margin-bottom: 2.5rem;
     }
     .favory__subtitle{
         padding-top: 2.5rem;
