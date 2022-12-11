@@ -56,6 +56,12 @@
     width:613px;
     height:477px;
 }
+.bloc-news__title{
+    margin-bottom: 1rem;
+}
+.bloc-news__desc{
+    margin-bottom: 1.5rem;
+}
 
 .email {
     display: block;
@@ -86,9 +92,19 @@
     border-radius: 6px;
 }
 
+.txt-condition-newsletter{
+    padding-left: .5rem;
+}
+
 .cocher-condition{
     padding-bottom: 24px;
     display:flex;
+}
+
+@media screen and (max-width: 768px){
+    .bloc-newsletter{
+        display: none;
+    }
 }
 
 
@@ -102,6 +118,8 @@
 
 .entreprise-lilloise__title{
     margin-bottom: 1.5rem;
+    font-size: 40px;
+    font-weight: 800;
 }
 
 .entreprise-lilloise-image, .entreprise-lilloise-text{
@@ -109,7 +127,6 @@
 }
 
 .entreprise-lilloise-text{
-    padding-top: 24px;
     padding-left:2rem;
 }
 
@@ -148,3 +165,182 @@
         margin-top: 32px;
     }
 }
+
+
+/*  SELECTION HOT  */
+*/*LA SELECTION HOT EN CE MOMENT*/
+.section-hot{
+    padding: 72px 0 64px 0 ;
+    background-color: #F4F1EC;
+}
+.contenuhot {
+    padding-bottom:8px;
+    margin: 0;
+}
+
+.statut-stock, .nom-marque-hot, .options-dispo, .nb-avis {
+    color:#595454;
+}
+
+.section-hot__subtitle{
+    margin-bottom: .5rem;
+    font-weight: 800;
+}
+.section-hot__title{
+    margin-bottom: 2rem;
+    font-weight: 800;
+}
+
+.article-selection-hot{
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boutons-section-hot{
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.nom-marque-hot{
+    font-size: 12px;
+}
+.premier-bouton-hot {
+    color: white;
+    background-color: #201E1E;
+    border-radius: 8px;
+    border:none;
+    padding : 8px 16px 8px 16px;
+    margin-right: 24px;
+}
+
+.bouton-hot{
+    color: black;
+    background-color: white;
+    border-radius: 8px;
+    border: none;
+    padding : 8px 16px 8px 16px;
+    margin-right: 24px;
+    white-space: nowrap;
+}
+
+.bouton-hot:last-of-type{
+    margin-right: 0px;
+}
+
+.details-produit-hot{
+    font-weight: bold;
+}
+
+.article-hot{
+    position: relative;
+    max-width: 276px;
+}
+
+
+.eco-bbq-master, .eco-bbq-kamado, .eco-bbq-napoleon, .eco-bbq-cook{
+    border-radius: 12px;
+    width: fit-content;
+    display: block;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    padding: 2px 6px 2px 6px;
+}
+
+.eco-bbq-kamado {
+    background-color: #DAD8D8;
+    color:black;
+}
+
+.eco-bbq-napoleon{
+    background-color: #315939;
+    color: white;
+}
+
+.eco-bbq-master, .eco-bbq-cook{
+    background-color: #CC3F29;
+    color: white;
+}
+
+.nb-avis{
+    display: inline-block;
+    margin: 0;
+}
+
+.prix-barre-hot{
+    text-decoration: line-through;
+    color:#595454;
+}
+
+.ligne-stock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.statut-stock {
+    display: inline-block;
+}
+
+
+.bouton-sac-shopping{
+    background-color: #E6E5E5;
+    border-radius: 50px;
+    padding: 8px;
+}
+
+.voir-autres-articles-hot{
+    display: flex;
+    position: relative;
+}
+
+.voir-tous-produits-hot {
+    color: black;
+    display: block;
+    text-decoration: underline;
+}
+.voir-tous-produits-hot:hover{
+    text-decoration: none;
+}
+
+.voir-autres-articles-hot{
+    display: flex;
+    justify-content: space-between;
+}
+.hot-btn__flex{
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+@media (max-width: 768px){
+    .boutons-section-hot{
+        overflow-x: scroll;
+        display: flex;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+    .bouton-hot, .premier-bouton-hot{
+        margin: 0;
+    }
+    .article-selection-hot{
+        overflow-x: scroll;
+        padding-left: 1rem;
+    }
+    .article-hot{
+        margin-right: 1rem;
+    }
+    .voir-autres-articles-hot{
+        padding: 0 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+

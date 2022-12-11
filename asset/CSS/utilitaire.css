@@ -1,8 +1,133 @@
+:root {
+  --background: #F4F1EC;
+  --primary_900: #680b10;
+  --primary_600: #D1111C;
+  --secondary_900: #0F2018;
+  --secondary_800: #17301C;
+  --white_900: #a1a7a1;
+  --white_100: #CFD9CE;
+  --grey_500: #AFACAC;
+  --grdiLine_0: 8%;
+  --grdiLine_1: 4%;
+  --cardMargin: 24px;
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("../FONT/Montserrat-VariableFont_wght.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "montserrat";
+}
+
+html {
+  background-color: var(--background);
+  overflow-x: hidden;
+}
+
+.responsiveHidden {
+  display: none;
+}
+
+.responsiveShow {
+  display: block;
+}
+
+.upperCase {
+  text-transform: uppercase;
+}
+
+.souligne {
+  text-decoration: underline;
+}
+
+.inline {
+  display: flex;
+  gap: 6px;
+}
+
+header {
+  width: 100%;
+  color: white;
+  background-color: var(--secondary_900);
+}
+
+.containInline {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 1rem;
+}
+
+a {
+  color: inherit;
+}
+
+.mediumHeight {
+  height: 70%;
+}
+
+.espace {
+  padding: 0 var(--grdiLine_0) 0 var(--grdiLine_0);
+}
+
+.container_2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 36px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.extraBold {
+  font-weight: 800;
+}
+
+.button {
+  background-color: var(--primary_600);
+  width: fit-content;
+  border-radius: 8px;
+  padding: 8px 16px 8px 16px;
+  border: none;
+  font-weight: bold;
+  color: white;
+}
+
+.button:hover {
+  background-color: var(--primary_900);
+}
+
+.button_white {
+  background-color: var(--white_100);
+  color: black;
+}
+
+.button_white:hover {
+  background-color: var(--white_900);
+}
+
+.relative {
+  position: relative;
+}
+
+h6{
+  font-size: 1rem;
+}
+
 .flex{
     display:flex;
 }
 .u-center{
   text-align: center;
+}
+.bg-white{
+  background-color: white;
 }
 
 .container,
