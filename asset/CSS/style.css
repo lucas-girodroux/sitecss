@@ -74,7 +74,7 @@ a {
     padding: 0 var(--grdiLine_0) 0 var(--grdiLine_0);
 }
 
-.container {
+.container_2 {
     display: flex;
     justify-content: space-between;
     gap: 36px;
@@ -301,7 +301,7 @@ header nav .popUp .containInline .boxText:hover {
     text-align: center;
 }
 
-#info .container .cardShow {
+#info .container_2 .cardShow {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -311,15 +311,15 @@ header nav .popUp .containInline .boxText:hover {
     color: white;
 }
 
-#info .container .cardShow h2 {
+#info .container_2 .cardShow h2 {
     margin-top: var(--cardMargin);
 }
 
-#info .container .cardShow button {
+#info .container_2 .cardShow button {
     margin-bottom: var(--cardMargin);
 }
 
-#info .container .cardShow img {
+#info .container_2 .cardShow img {
     position: absolute;
     z-index: -1;
     width: 100%;
@@ -526,7 +526,7 @@ footer .mention .banque {
 }
 
 @media (max-width: 1300px) {
-    #info .container {
+    #info .container_2 {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
