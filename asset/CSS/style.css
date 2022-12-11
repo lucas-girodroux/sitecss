@@ -1,14 +1,15 @@
-:root{
-    --background : #F4F1EC;
-    --primary_600 : #D1111C;
-    --secondary_900 : #0F2018;
-    --secondary_800 : #17301C;
-    --secondary_100 : #CFD9CE;
-
-    --grdiLine_0 : 8%;
-    --grdiLine_1 : 4%;
-
-    --cardMargin:24px;
+:root {
+    --background: #F4F1EC;
+    --primary_900: #680b10;
+    --primary_600: #D1111C;
+    --secondary_900: #0F2018;
+    --secondary_800: #17301C;
+    --white_900: #a1a7a1;
+    --white_100: #CFD9CE;
+    --grey_500: #AFACAC;
+    --grdiLine_0: 8%;
+    --grdiLine_1: 4%;
+    --cardMargin: 24px;
 }
 
 @font-face {
@@ -16,247 +17,530 @@
     src: url("../FONT/Montserrat-VariableFont_wght.ttf");
 }
 
-*{
-    padding : 0;
-    margin : 0;
+* {
+    padding: 0;
+    margin: 0;
     text-decoration: none;
     list-style: none;
     font-family: "montserrat";
 }
 
-html{
+html {
     background-color: var(--background);
+    overflow-x: hidden;
 }
 
-.upperCase{
+.responsiveHidden {
+    display: none;
+}
+
+.responsiveShow {
+    display: block;
+}
+
+.upperCase {
     text-transform: uppercase;
 }
 
-header{
+.souligne {
+    text-decoration: underline;
+}
+
+.inline {
+    display: flex;
+    gap: 6px;
+}
+
+header {
     width: 100%;
     color: white;
     background-color: var(--secondary_900);
-
 }
 
-a{
+.containInline {
+    display: flex;
+    flex-direction: row;
+}
+
+a {
     color: inherit;
 }
 
-.mediumHeight{
+.mediumHeight {
     height: 70%;
 }
 
-.espace{
+.espace {
     padding: 0 var(--grdiLine_0) 0 var(--grdiLine_0);
-
 }
 
-.container{
+.container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 36px;
-
 }
 
-.extraBold{
+.bold {
+    font-weight: bold;
+}
+
+.extraBold {
     font-weight: bolder;
 }
 
-.button{
+.button {
     background-color: var(--primary_600);
-    border-radius: 14px;
-    padding: 16px;
+    width: fit-content;
+    border-radius: 8px;
+    padding: 8px 16px 8px 16px;
     border: none;
     font-weight: bold;
     color: white;
 }
 
-.button_white{
-    background-color: var(--background);
+.button:hover {
+    background-color: var(--primary_900);
+}
+
+.button_white {
+    background-color: var(--white_100);
     color: black;
 }
 
-.relative{
+.button_white:hover {
+    background-color: var(--white_900);
+}
+
+.relative {
     position: relative;
 }
+
 
 /* ---------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------
                                                                                             HEADER
 ---------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------*/
 
-header p{
+header p {
     font-size: 14px;
 }
 
-header #promo{
+header #promo {
     background-color: var(--secondary_800);
     text-align: center;
-    padding: 10px 0 10px 0 ;
+    padding: 10px 0 10px 0;
 }
 
-header nav{
+header nav {
     height: fit-content;
 }
 
-header nav .boxTop{
+header nav .boxTop {
     padding: 16px 0 16px 0;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
-
 }
 
-
-
-
-header nav .boxTop .search{
+header nav .search {
     background-color: var(--secondary_800);
     border-radius: 32px;
     width: 360px;
     padding: 14px 16px 14px 40px;
     border: none;
-
-
     background-color: var(--secondary_800);
     background-image: url('../IMG/search_solid.svg');
     background-position: 10px 10px;
     background-repeat: no-repeat;
     color: white;
-
 }
 
-header nav .boxTop a:hover p{
+header nav .boxTop a:hover p {
     color: var(--primary_600);
 }
 
-
-
-header nav .boxTop .specialBox{
+header nav .boxTop .specialBox {
     display: flex;
     align-items: center;
     font-size: 12px;
     gap: 12px;
-
 }
 
-header nav .boxTop .specialBox .boxText{
+header nav .boxTop .specialBox .boxText {
     width: max-content;
     white-space: nowrap;
 }
 
-header nav .boxTop .specialBox object{
+header nav .boxTop .specialBox object {
     height: 70%;
 }
 
-header nav .boxBottom{
+header nav .boxBottom {
     padding-bottom: 16px;
-    
 }
 
-header nav .boxBottom ul{
+header nav .boxBottom ul {
     display: flex;
     justify-content: space-between;
     gap: 16px;
     font-size: 13px;
     font-weight: bold;
-} 
+}
 
-header nav .boxBottom ul a:hover{
+header nav .boxBottom ul a:hover {
     color: var(--primary_600);
 }
+
+header nav .popUp {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--secondary_900);
+    left: 0;
+    top: 0;
+    z-index: 5;
+    display: none;
+}
+
+header nav .popUp .croix {
+    padding: 16px var(--grdiLine_0) 32px var(--grdiLine_0);
+}
+
+header nav .popUp ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-weight: bolder;
+}
+
+header nav .popUp ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav .popUp ul li a:hover {
+    color: var(--primary_600);
+}
+
+header nav .popUp .line {
+    height: 2px;
+    width: 100%;
+    background-color: var(--secondary_800);
+    margin: 32px 0 16px 0;
+}
+
+header nav .popUp .containInline {
+    justify-content: space-between;
+}
+
+header nav .popUp .containInline .boxText {
+    display: flex;
+    gap: 16px;
+    font-weight: normal;
+    padding-bottom: 32px;
+}
+
+header nav .popUp .containInline .boxText:hover {
+    color: var(--primary_600);
+}
+
 
 /* ---------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------
                                                                                             MAIN PAGE
 ---------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------*/
 
-
-
-.button:hover{
+.button:hover {
     cursor: pointer;
 }
 
-.button:active{
+.button:active {
     transform: translateY(1px);
 }
 
-#homePage{
+#homePage {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     text-align: center;
-
     position: relative;
     margin: 16px var(--grdiLine_1) 16px var(--grdiLine_1);
-
     height: 580px;
-
     color: white;
-
-
 }
 
-#homePage img{
+#homePage img {
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: -1;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
-#homePage h3{
+#homePage h3 {
     font-size: 13px;
 }
 
-#homePage h1{
+#homePage h1 {
     font-size: 80px;
 }
+
 
 /* ---------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------
                                                                                             info
 ---------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------*/
 
-#info{
+#info {
     display: flex;
     flex-direction: column;
-
     gap: 16px;
-
     padding: 32px 0 32px 0;
 }
 
-#info .textAndTitle{
+#info .textAndTitle {
     text-align: center;
 }
 
-#info .container .cardShow{
+#info .container .cardShow {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-
-
-    width: 375px;
-    height: 300px;
-
+    min-width: 375px;
+    min-height: 300px;
     color: white;
 }
 
-#info .container .cardShow h2{
+#info .container .cardShow h2 {
     margin-top: var(--cardMargin);
 }
 
-#info .container .cardShow button{
+#info .container .cardShow button {
     margin-bottom: var(--cardMargin);
 }
 
-#info .container .cardShow img{
+#info .container .cardShow img {
     position: absolute;
     z-index: -1;
     width: 100%;
-
-
 }
 
 
+/* ---------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------
+                                                                                            footer
+---------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------*/
+
+footer {
+    background-color: var(--secondary_900);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+footer .containEtiquette {
+    display: flex;
+    padding-top: 32px;
+    justify-content: space-between;
+}
+
+footer .containEtiquette .etiquette {
+    min-width: 276px;
+    display: flex;
+    gap: 8px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+footer .containEtiquette .etiquette .etiquetteImg {
+    align-self: flex-start;
+}
+
+footer .text {
+    color: var(--grey_500);
+    padding: 32px 0 32px 0;
+}
+
+footer .containElem {
+    color: var(--grey_500);
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+}
+
+footer .containElem h3 {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .containElem h3 object {
+    display: none;
+}
+
+footer .containElem .elem {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 175px;
+}
+
+footer .containElem .basic:hover {
+    cursor: pointer;
+}
+
+footer .containElem .special {
+    max-width: 375px;
+}
+
+footer .containElem .special .search {
+    background-color: transparent;
+    border-radius: 6px;
+    max-width: 600px;
+    padding: 12px;
+    border: solid 1px white;
+    color: white;
+}
+
+footer .containElem .special form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+footer .containElem .special form input[type=checkbox] {
+    align-self: flex-start;
+}
+
+footer .follow {
+    display: flex;
+    gap: 16px;
+    color: white;
+    padding-bottom: 32px;
+}
+
+footer .mention {
+    color: var(--grey_500);
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+}
+
+footer .mention .banque {
+    display: flex;
+    gap: 6px;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------
+                                                                                            AVIS
+---------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------*/
+
+#avis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#avis .contain {
+    display: flex;
+    gap: 32px;
+    padding: 32px 0 32px 0;
+}
+
+#avis .cardAvis {
+    background-color: var(--white_100);
+    padding: 16px;
+    border-radius: 12px;
+    min-width: 375px;
+    max-width: 375px;
+}
+
+#avis .cardAvis .comment {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    padding-bottom: 32px;
+}
+
+#avis .cardAvis .comment .containStar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#voirAvis {
+    padding: 0 0 32px 0;
+    text-decoration: underline;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------
+                                                                                            RESPONSIVE
+---------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------*/
+
+@media (max-width: 1545px) {
+     :root {
+        --grdiLine_0: 4%;
+        --grdiLine_1: 0%;
+    }
+    #espacePhone {
+        padding: 0;
+    }
+    footer .containEtiquette {
+        justify-content: none;
+        gap: 16px;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        padding-left: var(--grdiLine_0);
+    }
+    footer .containEtiquette::-webkit-scrollbar {
+        display: none;
+    }
+    footer .text {
+        padding: 32px var(--grdiLine_0) 32px var(--grdiLine_0);
+    }
+    footer .containElem {
+        flex-direction: column;
+        padding: 0 var(--grdiLine_0) 32px var(--grdiLine_0);
+    }
+    footer .containElem h3 object {
+        display: block;
+        width: fit-content;
+    }
+    footer .containElem .elem {
+        width: 100%;
+        max-width: none;
+        padding: 16px 0 16px 0;
+    }
+    footer .containElem .basic p {
+        display: none;
+    }
+    footer .follow {
+        padding: 0 var(--grdiLine_0) 32px var(--grdiLine_0);
+    }
+    footer .mention {
+        flex-direction: column;
+        gap: 32px;
+        padding: 0 var(--grdiLine_0) 32px var(--grdiLine_0);
+    }
+}
+
+@media (max-width: 1300px) {
+    #info .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1235px) {
+    .responsiveHidden {
+        display: block;
+    }
+    .responsiveShow {
+        display: none;
+    }
+    #avis .contain {
+        flex-direction: column;
+    }
+}

@@ -1,46 +1,48 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <title>Titre de la page</title>
     <link rel="stylesheet" href="./asset/CSS/style.css">
 </head>
+
 <body>
-    <header >
+    <header>
         <p id="promo">😎 Profitez de votre jardin grâce à tous nos packs promos</p>
-        <nav class="espace">
+        <nav class="espace responsiveShow">
             <div class="boxTop">
                 <div class="container">
-                    <object data="./asset/IMG/Logo_desktop.svg"> </object>  
-                
+                    <object data="./asset/IMG/Logo_desktop.svg"> </object>
 
-                    <input type="text" class="search" placeholder="Rechercher un produit">   
+
+                    <input type="text" class="search" placeholder="Rechercher un produit">
                 </div>
-        
+
 
                 <div class="container">
                     <a href="#" class="specialBox">
-                        <object data="./asset/IMG/Comment.svg" class="mediumHeight"> </object>  
+                        <object data="./asset/IMG/Comment.svg" class="mediumHeight"> </object>
                         <div class="boxText">
                             <p>Contactez un de</p>
                             <p><strong>Nos conseillers</strong></p>
-                        </div> 
+                        </div>
                     </a>
-    
+
                     <a href="#" class="specialBox">
-                        <object data="./asset/IMG/location.svg" class="mediumHeight"> </object>  
+                        <object data="./asset/IMG/location.svg" class="mediumHeight"> </object>
                         <div class="boxText">
                             <p>Retrouvez-nous</p>
                             <p><strong>Magasin à Lille</strong></p>
-                        </div> 
+                        </div>
                     </a>
-    
+
                     <a href="#"><object data="./asset/IMG/client.svg" class="mediumHeight"> </object>  </a>
-    
-    
-                    <a href="#" class="test"><object data="./asset/IMG/shop.svg" class="mediumHeight"></object></a>   
+
+
+                    <a href="#" class="test"><object data="./asset/IMG/shop.svg" class="mediumHeight"></object></a>
                 </div>
-                  
+
             </div>
             <div class="boxBottom">
                 <ul>
@@ -56,17 +58,105 @@
                 </ul>
             </div>
         </nav>
+
+        <nav class="espace responsiveHidden relative">
+            <!-- POP UP -->
+            <div class="popUp" id="navPopUp">
+                <img src="./asset/IMG/croix.png" class="espace croix" onclick="togglePopUp(false)" />
+                <ul class="espace">
+                    <li>
+                        <a class="upperCase" href="#">barbecues</a>
+                        <object data="./asset/IMG/arrow-right-solid 2.svg"> </object>
+
+                    </li>
+                    <li>
+                        <a class="upperCase" href="#">accesoires barbecues</a>
+                        <object data="./asset/IMG/arrow-right-solid 2.svg"> </object>
+                    </li>
+                    <li>
+                        <a class="upperCase" href="#">planchas</a>
+                        <object data="./asset/IMG/arrow-right-solid 2.svg"> </object>
+                    </li>
+                    <li>
+                        <a class="upperCase" href="#">braseros</a>
+                        <object data="./asset/IMG/arrow-right-solid 2.svg"> </object>
+                    </li>
+                    <li>
+                        <a class="upperCase" href="#">fumoirs</a>
+                        <object data="./asset/IMG/arrow-right-solid 2.svg"> </object>
+                    </li>
+                    <li>
+                        <a class="upperCase" href="#">cuisine exterieur</a>
+                        <object data="./asset/IMG/arrow-right-solid 2.svg"> </object>
+                    </li>
+                    <li>
+                        <a class="upperCase" href="#">Ambiance outdoor </a>
+                        <object data="./asset/IMG/arrow-right-solid 2.svg"> </object>
+                    </li>
+                    <li>
+                        <a class="upperCase" href="#">Pièces détachées</a>
+                        <object data="./asset/IMG/arrow-right-solid 2.svg"> </object>
+                    </li>
+                    <li>
+                        <a class="upperCase" href="#">‍🔥 Promotions</a>
+                        <object data="./asset/IMG/arrow-right-solid 2.svg"> </object>
+                    </li>
+                    <span class="line"></span>
+                    <span class="containInline">
+                        <div class="boxText">
+                            <object data="./asset/IMG/phone-solid.svg"></object>
+                            <div>
+                                <p>Contactez-nous</p>
+                                <p><strong>03 59 55 40 40</strong></p>
+                            </div>
+                        </div>
+                        <div class="boxText">
+                            <object data="./asset/IMG/location.svg"></object>
+                            <div>
+                                <p>Retrouvez-nous</p>
+                                <p><strong>Magasin à Lille</strong></p>
+                            </div>
+                        </div>
+                    </span>
+
+                </ul>
+            </div>
+
+            <div class="boxTop">
+                <div class="container">
+                    <img src="./asset/IMG/menu-sharp 1.png" onclick="togglePopUp(true)" />
+
+                    <object data="./asset/IMG/Logo_desktop.svg"> </object>
+                </div>
+
+
+                <div class="container">
+                    <a href="#" class="specialBox">
+                        <object data="./asset/IMG/Comment.svg" class="mediumHeight"> </object>
+                    </a>
+
+
+                    <a href="#"><object data="./asset/IMG/client.svg" class="mediumHeight"> </object>  </a>
+
+
+                    <a href="#" class="test"><object data="./asset/IMG/shop.svg" class="mediumHeight"></object></a>
+                </div>
+
+            </div>
+            <div class="boxBottom">
+                <input type="text" class="search" placeholder="Rechercher un produit">
+            </div>
+        </nav>
     </header>
     <section id=homePage>
         <img src="./asset/IMG/homepageimg.png">
         <h3 class="upperCase">grands classiques</h3>
-        <h1 class="upperCase">Tout feu,<br> 
-            tout flamme</h1>
+        <h1 class="upperCase">Tout feu,<br> tout flamme</h1>
         <button class="button">Voir les barbecues au charbon</button>
     </section>
 
     <div class="espace">
-       <section id="info">
+        <section id="info">
             <div class="textAndTitle">
                 <p class="upperCase extraBold">Chez esprit Barbecue</p>
                 <h2 class="upperCase extraBold">Trouvez votre Barbecue, Plancha, Brasero, Fumoir</h2>
@@ -74,29 +164,191 @@
 
             <div class="container">
 
-                <div class="cardShow relative" >
+                <div class="cardShow relative">
                     <h2 class="upperCase extraBold">Maîtriser la cuisson</h2>
                     <img src="./asset/IMG/maitrise_cuisson.png">
                     <button class="button button_white">Voir les accessoires de cuisson</button>
                 </div>
 
-                <div class="cardShow relative" >
+                <div class="cardShow relative">
                     <h2 class="upperCase extraBold">Prolonger la saison</h2>
                     <img src="./asset/IMG/prolongerSaison.png">
                     <button class="button button_white">Voir les braseros ronds</button>
                 </div>
 
-                <div class="cardShow relative" >
+                <div class="cardShow relative">
                     <h2 class="upperCase extraBold">La meilleure pizza</h2>
                     <img src="./asset/IMG/pizza.png">
                     <button class="button button_white">Voir les fours à pizza</button>
                 </div>
             </div>
-       </section> 
+        </section>
+
+        <section id="avis">
+            <div class="contain">
+                <div>
+                    <h4 class="upperCase extraBold">Nos avis vérifiées</h4>
+                    <h2 class="upperCase extraBold">Les clients vous le diront</h2>
+                    <p>9.6/10 basé sur 3 698 avis</p>
+                </div>
+
+                <div class="cardAvis">
+                    <div class="comment">
+                        <span class="containStar">
+                            <span>
+                                <object data="./asset/IMG/star.svg"></object>
+                                <object data="./asset/IMG/star.svg"></object>
+                                <object data="./asset/IMG/star.svg"></object>
+                                <object data="./asset/IMG/star.svg"></object>
+                                <object data="./asset/IMG/star.svg"></object>
+                            </span>
+                        <p>07/09/2022</p>
+                        </span>
+                        <p>De la commande à la livraison en relais tout a été très rapide</p>
+
+                    </div>
+                    <p>Claudine V.</p>
+                </div>
+                <div class="cardAvis">
+                    <div class="comment">
+                        <span class="containStar">
+                            <span>
+                                <object data="./asset/IMG/star.svg"></object>
+                                <object data="./asset/IMG/star.svg"></object>
+                                <object data="./asset/IMG/star.svg"></object>
+                                <object data="./asset/IMG/star.svg"></object>
+                                <object data="./asset/IMG/star.svg"></object>
+                            </span>
+                        <p>07/09/2022</p>
+                        </span>
+                        <p>Tout est bien</p>
+
+                    </div>
+                    <p>Tom V.</p>
+                </div>
+            </div>
+
+            <a href="#" id="voirAvis">Voir tous les avis</a>
+
+        </section>
     </div>
 
-    <footer>
+    <footer class="espace" id="espacePhone">
+        <div class="containEtiquette">
+            <div class="etiquette">
+                <object data="./asset/IMG/camion.svg" class="etiquetteImg"></object>
+                <div>
+                    <p class="bold">Livraison offerte dès 250 €</p>
+                    <p>Choisissez votre transporteur</p>
+                </div>
+            </div>
 
+            <div class="etiquette">
+                <object data="./asset/IMG/magasin.svg" class="etiquetteImg"></object>
+                <div>
+                    <p class="bold">Click and collect - gratuit</p>
+                    <p>Récupérez votre commande</p>
+                </div>
+            </div>
+
+            <div class="etiquette">
+                <object data="./asset/IMG/camion.svg" class="etiquetteImg"></object>
+                <div>
+                    <p class="bold">Paiement flexible</p>
+                    <p>Fractionnez en 3 ou 4 fois</p>
+                </div>
+            </div>
+
+            <div class="etiquette">
+                <object data="./asset/IMG/camion.svg" class="etiquetteImg"></object>
+                <div>
+                    <p class="bold">9,6/10 sur Avis vérifiés</p>
+                    <p>Nos clients ont témoigné</p>
+                </div>
+            </div>
+        </div>
+        <p class="text">Texte Seo - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu elit vitae ante porta aliquet eu at risus. Curabitur nec nisl venenatis, facilisis sem eu, viverra urna. Nullam bibendum et metus et eleifend. Maecenas id finibus
+            enim, ut porta nibh. Fusce vulputate, mi consectetur semper euismod, neque sem commodo nibh, vitae bibendum odio ipsum id arcu. Proin hendrerit lacinia neque, non fermentum nisi feugiat eget. Praesent sed consectetur ex, in bibendum ex. Sed
+            quis ornare lacus, vel hendrerit sapien. Morbi cursus risus tempus lobortis mollis. Vivamus arcu purus, viverra sed pulvinar at, rutrum ac sapien. Cras eleifend, dui eu fringilla lacinia, nunc enim hendrerit ipsum, eget elementum risus tellus
+            vel erat.Sed quis ornare lacus, vel hendrerit sapien. Morbi cursus risus tempus lobortis mollis. Vivamus arcu purus, viverra sed pulvinar at, rutrum ac sapien. Cras eleifend, dui eu fringilla lacinia, nunc enim hendrerit ipsum, eget elementum
+            risus tellus vel erat.</p>
+
+        <div class="containElem">
+            <div class="elem basic">
+                <h3 class="upperCase" onclick="toggleFooterElem(this)">Conseils <object data="./asset/IMG/arow.svg"></object></h3>
+                <p>Conseils Barbecue</p>
+                <p>Conseils Plancha</p>
+                <p>Conseils Brasero</p>
+                <p>Conseils Fumoir</p>
+                <p>Conseils Ambiance Outdoor</p>
+            </div>
+
+            <div class="elem basic">
+                <h3 class="upperCase" onclick="toggleFooterElem(this)">centre d’aide <object data="./asset/IMG/arow.svg"></object></h3>
+                <p>Foire aux questions</p>
+                <p>Livraison</p>
+                <p>Conditions générales</p>
+                <p>Paiement</p>
+            </div>
+
+            <div class="elem basic">
+                <h3 class="upperCase" onclick="toggleFooterElem(this)">Entreprise <object data="./asset/IMG/arow.svg"></object></h3>
+                <p>Qui sommes-nous ?</p>
+                <p>Magasin à Lille</p>
+                <p>Recrutements</p>
+                <p>Nos Marques</p>
+            </div>
+
+            <div class="elem basic">
+                <h3 class="upperCase" onclick="toggleFooterElem(this)">Magasin à lille <object data="./asset/IMG/arow.svg"></object> </h3>
+                <p>1 rue de menin <br>Parc de l'innovation 59520<br> Marquette Lez </p>
+                <p>Tel : 03 59 55 40 40</p>
+                <p class="souligne">Contactez-nous</p>
+            </div>
+
+            <div class="elem special">
+                <h3 class="upperCase">Newsletter</h3>
+                <p>Inscrivez-vous pour des offres exclusives, des conseils, des événements et plus encore.</p>
+                <form>
+                    <p>Email</p>
+                    <input type="text" class="search" placeholder="Votre adresse email">
+                    <div class="inline">
+                        <input type="checkbox">
+                        <p> J'accepte de recevoir 1 à 2 fois par mois des emails de la part d’Esprit Barbecue</p>
+
+                    </div>
+                    <button class="button">Je m’inscris</button>
+
+                </form>
+
+            </div>
+        </div>
+
+        <span class="follow">
+            <p class="upperCase">Suivez-nous</p>
+            <object data="./asset/IMG/facebook.svg"></object>
+            <object data="./asset/IMG/instagram.svg"></object>
+            <object data="./asset/IMG/youtube.svg"></object>
+            <object data="./asset/IMG/pinterest.svg"></object>
+            <object data="./asset/IMG/linkedin.svg"></object>
+        </span>
+
+        <div class="mention">
+            <span class="banque">
+                <object data="./asset/IMG/lock.svg"></object>
+                <object data="./asset/IMG/Alma.svg"></object>
+                <object data="./asset/IMG/Visa.svg"></object>
+                <object data="./asset/IMG/Mastercard.svg"></object>
+                <object data="./asset/IMG/PayPal.svg"></object>
+                <object data="./asset/IMG/CB.svg"></object>
+
+            </span>
+
+            <p>©2022 Esprit Barbecue • Plan du site • Mentions légales</p>
+        </div>
     </footer>
+
+    <script src="./asset/JS/script.js"></script>
 </body>
+
 </html>
