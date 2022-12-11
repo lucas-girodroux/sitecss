@@ -1,4 +1,4 @@
-.title{
+h1,h6 {
     text-transform: uppercase;
 }
 
@@ -66,10 +66,137 @@
     background-image: url("/asset/img/image_bloc_pizza.png");
 }
 
+/*LA SELECTION HOT EN CE MOMENT*/
+.contenuhot {
+    padding-bottom:8px;
+    margin: 0;
+}
+
+.statut-stock, .nom-marque-hot, .options-dispo, .nb-avis {
+    color:#595454;
+}
+
+.section-hot {
+    background-color: #F4F1EC;
+}
+
+
+
+.section-hot h1, h6{
+    text-align: center;
+}
+
+.boutons-section-hot{
+    text-align: center;
+}
+
+.premier-bouton-hot {
+    color: white;
+    background-color: #201E1E;
+    border-radius: 8px;
+    border:none;
+    padding : 8px 16px 8px 16px;
+    margin-right: 24px;
+}
+
+.bouton-hot{
+    color: black;
+    background-color: white;
+    border-radius: 8px;
+    border: none;
+    padding : 8px 16px 8px 16px;
+    margin-right: 24px;
+}
+
+.bouton-hot:last-of-type{
+    margin-right: 0px;
+}
+
+.details-produit-hot{
+    font-weight: bold;
+}
+
+.article-hot{
+    position: relative;
+    max-width: 276px;
+    margin: 40px 30px 0 0;
+}
+
+.article-hot:last-of-type{
+    margin: 40px 0 0 0;
+}
+
+
+.eco-bbq-master, .eco-bbq-kamado, .eco-bbq-napoleon, .eco-bbq-cook{
+    border-radius: 12px;
+    width: fit-content;
+    display: block;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    padding: 2px 6px 2px 6px;
+}
+
+.eco-bbq-kamado {
+    background-color: #DAD8D8;
+    color:black;
+}
+
+.eco-bbq-napoleon{
+    background-color: #315939;
+    color: white;
+}
+
+.eco-bbq-master, .eco-bbq-cook{
+    background-color: #CC3F29;
+    color: white;
+}
+
+.nb-avis{
+    display: inline-block;
+    margin: 0;
+}
+
+.prix-barre-hot{
+    text-decoration: line-through;
+    color:#595454;
+}
+
+.ligne-stock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.statut-stock {
+    display: inline-block;
+}
+
+
+.bouton-sac-shopping{
+    background-color: #E6E5E5;
+    border-radius: 50px;
+    padding: 8px;
+}
+
+.voir-autres-articles-hot{
+    display: flex;
+    position: relative;
+}
+
+.voir-tous-produits-hot a{
+    color: black;
+}
+
 /*NOS MARQUES*/
+.section-marques h1{
+    text-align: center;
+}
+
 .brand-seo{
     justify-content: space-between;
 }
+
 .bloc-marq{
     background-color: pink;
     min-width: 174px;
